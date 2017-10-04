@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+x = 0
+function change_header()
+{
+if(x == 0)
+{  
+  document.getElementById("myHeader").innerHTML="Nice day!";
+   document.getElementById("b1").innerHTML="Change Back";
+  x = 1;
+}
+else
+{
+   document.getElementById("myHeader").innerHTML="Hello World!";
+   document.getElementById("b1").innerHTML="Change Text";
+   x = 0;
+}  
+}
+</script>
+</head>
+<body>
+<h1 id="myHeader">Hello World!</h1>
+<button id=b1 onclick="change_header()">Change text</button>
+</body>
+</html>
+
+
+
