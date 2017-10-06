@@ -1,0 +1,15 @@
+Q. Your task for the Day 2 will be apply form validation on the login form in the login.html page.
+•	The Password should contain at least 6 characters and shouldn’t increase a length of 16 character.
+•	At least one special character
+•	At least one Upper Case letter
+•	At least one Lower Case letter
+•	At least one Digit.
+Apply the same password validation rules on the sign-up form in the signup.html page. 
+
+Q. Try to build your own image slider?
+Display image in a container and make two buttons and use them to change the images. 
+Apply necessary animation one the image change.
+(Hint: use onclick event to be called to change the image.)
+
+Q. Try to make a single webpage with both sign-in and sign-up form on the same page in such a manner that at a time only one of the form shows up, make a button and add event listener to it. On button click the forms should switch between sign-up and sign-in. Apply necessary validation rules to form fields them.
+(Hint: you can use CSS display property to switch between the forms, on button click one of the block should be displayed block and other should display none)

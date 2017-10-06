@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta name="author" coontent="Shantanu Mishra">
+<meta name="description" coontent="HTML DOM examples for GDG-128">
+<style>
+.overlay-show{
+position:fixed;
+ top:0;
+ left:0;
+ background:rgba(0,0,0,0.48);
+ z-index:5;
+ width:100%;
+ height:100%;
+ display:none;
+ }
+</style>
+
+<script type="text/javascript" src="my_js.js">
+</script>
+
+<script>
+
+function myFunction() {
+    var x = document.getElementById("fname");
+    x.value = x.value.toUpperCase();
+}
+
+function changeText(id) {
+    id.innerHTML = "<i>Click on this text!</i>";
+	id.style.color = "blue";
+}
+function hide() {
+	document.getElementById("images").style.display = "none";
+}
+function show() {
+	document.getElementById("images").style.display = "inline";
+}
+function toggle_ov(button_id) {
+	if(document.getElementsByClassName("overlay-show")[0].style.display == "block")
+	{
+	document.getElementsByClassName("overlay-show")[0].style.display = "none";
+	button_id.innerHTML = "Show Overlay";
+	}
+	else
+	{
+	document.getElementsByClassName("overlay-show")[0].style.display = "block";
+	button_id.innerHTML = "Overlay is Active";
+	}
+}
+</script>
+</head>
+<body>
+<hr>
+<h3>Input Field</h3>
+<p>Enter your name:</p> <input type="text" id="fname" onchange="myFunction()" value="dot">
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+<hr>
+<h3> DOM Events</h3>
+<h1 onclick="changeText(this)">Click on this text!</h1><hr>
+<h3>Element Display</h3>
+<img id="images" style="display: inline;" src="css.png" alt="Image"/>
+<button onClick="hide();">Hide Image.</button>
+<button onClick="show();">Show Image.</button><hr>
+<h3>Overlay Example</h3>
+<div class="overlay-show"></div>
+<button onClick="toggle_ov(this);" style="z-index: 7; position:absolute;">Show Overlay</button> <!-- Attention: See why I have used z-index & absolute CSS property for this button!!! -->
+</body>
+</html>
+

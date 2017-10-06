@@ -1,0 +1,251 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: "Times New Roman";
+}
+
+.textCenter {
+	text-align: center;
+}
+
+/*================== STYLING FOR NAVBAR ==================*/
+
+#navbar ul { 
+	margin: 0;  
+	list-style-type: none; 
+	text-align: right; 	/*not required but a good practice*/
+	background-color: #ccc; 
+	height:60px;	/*navbar has height 60px*/
+	} 
+
+#right_menu li {  
+	display: inline;  
+	padding-top:20px;
+	padding-bottom:20px;
+	font-weight:300;
+	} 
+
+#right_menu li a { 
+	text-decoration: none; 
+	font-size:20px;
+	padding: 18px 18px ; 
+	color: #555;
+	background-color: #ccc; 
+	} 
+ 
+#right_menu a:hover { 
+	color: #000; 
+	background-color: grey; 
+	}
+
+#navbar ul li a img{
+	max-height:60px;
+}
+
+#right_menu{
+	float:right;
+	padding-top:18px;
+	padding-bottom:18px;
+}
+
+/*===================== MAIN PAGE ===================*/
+
+#MainPage{
+	background-color: #74AFAD;
+	padding-top:90px;	
+	padding-bottom:30px;	
+	color: #2B2B2B;
+	text-align: center;
+}  
+
+#MainPage button{
+	padding: 15px 60px;
+	margin: 20px 20px;
+	background-color: #00695C;
+	border:1px solid #00695C;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 18px;
+}
+
+#MainPage button:hover, #MainPage button:active{
+	background-color: transparent;
+	border:1px solid #00695C;
+	color:#00695C;
+}
+
+/*====================== About Us ====================*/
+#About{
+	background-color: #ccc;
+	padding-top:20px;	
+	padding-bottom:90px;
+
+}
+#About h1{
+	color:crimson;
+}
+
+#About ul{
+	padding-top:30px;
+}
+
+#About h3{
+	text-decoration: underline;
+}
+#About p{
+	margin-top: -11px;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.container{
+	width:80%;
+	margin:0 auto;
+}
+
+
+/*=========================== Contact ====================*/
+
+
+#Contact{
+	background:#353a40;	
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+#Contact h1{
+	 text-align: center;
+	 color: white; 
+}
+
+table {
+  border-collapse: separate;
+  background:#fff;
+  margin:20px auto;
+
+}
+
+thead th {
+  font-size:16px;
+  font-weight:400;
+  color:#fff;
+  text-align:left;
+  padding:20px;
+  background-color:grey;
+}
+
+tbody tr td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight:400;
+  color:#5f6062;
+  font-size:13px;
+  padding:20px 20px 20px 20px;
+  border-bottom:1px solid #e0e0e0;
+  
+}
+
+tbody tr:nth-child(2n) {
+  background:#f0f3f5;
+}
+
+.login_box{
+	background:#f7f7f7;
+	border:3px solid #F4F4F4;
+	padding-left: 15px;
+	margin-bottom:25px;
+}
+
+.input_title{
+	color:rgba(164, 164, 164, 0.9);
+	padding-left:3px;
+	margin-bottom: 2px;
+}
+
+hr{
+	width:100%;
+}
+
+.welcome{
+	font-family: "myriad-pro",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color:#1F618D;
+	margin-bottom:25px;
+	margin-top:50px;
+
+}
+
+.login_title{
+	font-family: "myriad-pro",sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	color:teal;
+
+}
+
+.card-container.card {
+	max-width: 350px;
+
+}
+
+.btn {
+	font-weight: 700;
+	height: 36px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	cursor: default;
+	border-radius:0;
+	background:#43A6EB;
+	height: 55px;
+	margin-bottom:10px;
+	font-size: 16px;
+	color: white;
+	border:1px solid #43A6EB;
+	padding:10px 143px;
+}
+
+/*
+ * Card component
+ */
+.card {
+	background-color: #FFFFFF;
+	/* just in case there no content*/
+	padding: 1px 25px 30px;
+	margin: 0 auto 25px;
+	margin-top: 15%x;
+
+}
+
+#inputEmail,#inputPassword,#inputName,#inputMobile,#inputDOB {
+	direction: ltr;
+	height: 44px;
+	font-size: 16px;
+}
+
+.form-signin input[type=email],
+.form-signin input[type=password],
+.form-signin input[type=text],
+.form-signin input[type=tel],
+.form-signin input[type=date],
+.form-signin button {
+	width: 100%;
+	display: block;
+	z-index: 1;
+	position: relative;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.form-signin .form-control:focus {
+	border-color: rgb(104, 145, 162);
+	outline: 0;
+
+}
+
+.btn-signin:hover,
+.btn-signin:active,
+.btn-signin:focus {
+	background-color: #2E86C1;
+}

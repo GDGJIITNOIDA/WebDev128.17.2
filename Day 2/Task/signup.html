@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign UP | GDG JIIT NOIDA, J128</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <style>
+        body {
+            height: 100%;
+            background-repeat: no-repeat;
+            background: rgba(170,230,250,0.85);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li style="float:left; padding:0px"><a href="https://developers.google.com/groups/start/" target="_blank" style="padding:0px"><img src="https://developers.google.com/_static/6db4302793/images/GDG-program-logo.png" style="border: 0; float: left;" /></a></li>
+            <div id="right_menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#Contact">Contact Us</a></li>
+                <li><a href="index.html#About">About US</a></li>
+                <li><a href="#">Gallery</a></li>
+            </div>
+        </ul>
+    </div>
+    <div class="container">
+        <h1 class="welcome textCenter">Welcome to <br> GDG JIIT NOIDA</h1>
+            <div class="card card-container">
+                <h2 class='login_title textCenter'>SIGNUP</h2>
+                <hr>
+                <form class="form-signin" id="sign_up_form" onsubmit="return validateSignUpForm()">
+
+                    <p class="input_title">Name</p>
+                    <input type="text" id="inputName" class="login_box" placeholder="Name"  autofocus>
+
+                    <p class="input_title">Email</p>
+                    <input type="email" id="inputEmail" class="login_box" placeholder="abc@mail.com"  >
+
+                    <p class="input_title">Password</p>
+                    <input type="password" id="inputPassword" class="login_box" placeholder="********" >
+
+                    <p class="input_title">Date of Birth</p>
+                    <input type="date" id="inputDOB" class="login_box"  >
+
+                    <p class="input_title">Mobile No.</p>
+                    <input type="tel" id="inputMobile" class="login_box" placeholder="10 Digit Mobile Number" >
+
+                    <button type="submit" id="signup_btn" class="btn btn-signin">Sign Up</button>
+                </form><!-- /form -->
+            </div><!-- /card-container -->
+    </div><!-- /container -->
+</body>
+<script>
+    function validateSignUpForm() {
+
+    }
+</script>
+</html>
